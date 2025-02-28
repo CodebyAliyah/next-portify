@@ -74,7 +74,7 @@ npm run dev
 
 <h2>🌍 Live Demo</h2>
 <p>
-  Check out the live version of my portfolio: <a href="https://">Ali-Yahya Portfolio</a>
+  Check out the live version of my portfolio: <a href="https://aliyahya.vercel.app/">Ali-Yahya Portfolio</a>
 </p>
 
 <h2>📧 Contact</h2>
