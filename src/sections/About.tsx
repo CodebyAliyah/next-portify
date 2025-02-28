@@ -1,16 +1,14 @@
-import aiStartupLandingPage from "../../public/images/ai-startup-landing-page.png";
-import AboutImage from "../../public/images/aboutme.png";
-import AboutImageMobile from "../../public/images/aboutme (2).png";
-import aboutali from "../../public/images/aboutali.png";
 import Image from "next/image";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import AboutImageMobile from "../../public/images/aboutme (2).png";
+import aboutali from "../../public/images/aboutali.png";
 
 export const AboutSection = () => {
   return (
-    <div className="flex items-center justify-center w-full px-4 md:px-8 lg:px-16 -mt-20" id="about">
+    <div className="flex flex-col items-center justify-center w-full px-4 md:px-8 lg:px-16 -mt-20" id="about">
       <ContainerScroll
         titleComponent={
-          <div className="flex flex-col items-center justify-center md:gap-3 text-center mt-6">
+          <div className="flex flex-col items-center justify-center text-center mt-6">
             <h1 className="font-cursive text-3xl md:text-5xl">About Me</h1>
             <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
               A glimpse into my world
@@ -19,28 +17,36 @@ export const AboutSection = () => {
         }
       >
         {/* Responsive Images */}
-        <div className="w-full flex justify-center">
-          <Image
-            src={aboutali}
-            alt="hero"
-            height={720}
-            width={1400}
-            className="rounded-2xl object-cover w-full h-auto max-w-3xl hidden md:block"
-            draggable={false}
-          />
-          <Image
-            src={AboutImageMobile}
-            alt="hero"
-            height={720}
-            width={1600}
-            className="rounded-2xl object-cover w-full h-auto max-w-3xl md:hidden"
-            draggable={false}
-          />
+        <div className="w-full flex flex-wrap justify-center gap-4">
+          {/* Desktop Image */}
+          <div className="hidden md:block w-full max-w-2xl">
+            <Image
+              src={aboutali}
+              alt="About Me"
+              height={600}
+              width={1200}
+              className="rounded-2xl object-cover w-full h-auto"
+              draggable={false}
+            />
+          </div>
+
+          {/* Mobile Image */}
+          <div className="md:hidden w-full max-w-sm">
+            <Image
+              src={AboutImageMobile}
+              alt="About Me"
+              height={500}
+              width={800}
+              className="rounded-2xl object-cover w-full h-auto"
+              draggable={false}
+            />
+          </div>
         </div>
       </ContainerScroll>
     </div>
   );
 };
+
 
 
 // export const AboutSection = () => {
