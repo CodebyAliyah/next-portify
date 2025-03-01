@@ -24,7 +24,7 @@ export const AboutSection = () => {
             alt="hero"
             height={720}
             width={1400}
-            className="mx-auto rounded-2xl object-cover h-full hidden md:block lg:w-full"
+            className="mx-auto rounded-2xl object-cover w-full h-auto hidden md:block"
             draggable={false}
           />
           {/* Mobile Image */}
@@ -33,7 +33,7 @@ export const AboutSection = () => {
             alt="hero"
             height={720}
             width={1600}
-            className="mx-auto rounded-2xl object-cover h-full md:hidden w-full"
+            className="mx-auto rounded-2xl object-cover w-full h-auto md:hidden"
             draggable={false}
           />
         </div>
