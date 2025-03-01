@@ -7,7 +7,6 @@ import ecommerceImage from "../../public/images/projects/ecommerce.png";
 import galleryImage from "../../public/images/projects/gallery.png";
 import rockImage from "../../public/images/projects/rockpaperscissor.png";
 import spaceImage from "../../public/images/projects/space.jpg";
-import threadsImage from "../../public/images/projects/threads.png";
 import ratemyuniImage from "../../public/images/projects/ratemyuni.jpg";
 import chatImg from "../../public/images/projects/chatImg.webp";
 import ArrowRightIcon from "../../public/icons/arrow-up-right.svg";
