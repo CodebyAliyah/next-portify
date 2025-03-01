@@ -32,7 +32,7 @@ export const AboutSection = () => {
           alt="hero"
           height={720}
           width={1600}
-          className="mx-auto rounded-2xl object-cover h-full object-left md:hidden "
+          className="mx-auto rounded-2xl object-cover w-full h-[75vh] sm:h-[85vh] md:hidden"
           draggable={false}
         />
       </ContainerScroll>
